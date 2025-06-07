@@ -1,2 +1,2 @@
 # Zhizafcreative.github.io
-frontpage
+ini hanya frontpage
