@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Halaman tidak ditemukan - DigiMarketAI Platform Pembelajaran Digital Marketing">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <title>404 - Halaman Tidak Ditemukan | DigiMarketAI</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Colors */
+            --primary-color: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary-color: #06b6d4;
+            --accent-color: #f59e0b;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --text-light: #9ca3af;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f9fafb;
+            --bg-dark: #111827;
+            --border-color: #e5e7eb;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            
+            /* Typography */
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-size-sm: 0.875rem;
+            --font-size-base: 1rem;
+            --font-size-lg: 1.125rem;
+            --font-size-xl: 1.25rem;
+            --font-size-2xl: 1.5rem;
+            --font-size-3xl: 1.875rem;
+            --font-size-4xl: 2.25rem;
+            --font-size-5xl: 3rem;
+            --font-size-6xl: 3.75rem;
+            
+            /* Spacing */
+            --spacing-2: 0.5rem;
+            --spacing-3: 0.75rem;
+            --spacing-4: 1rem;
+            --spacing-6: 1.5rem;
+            --spacing-8: 2rem;
+            --spacing-12: 3rem;
+            --spacing-16: 4rem;
+            --spacing-20: 5rem;
+            
+            /* Border Radius */
+            --radius-lg: 0.5rem;
+            --radius-xl: 0.75rem;
+            
+            /* Transitions */
+            --transition-fast: 150ms ease-in-out;
+            --transition-normal: 300ms ease-in-out;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: var(--font-size-base);
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Background Pattern */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e2e8f0" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-4);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .error-content {
+            background: white;
+            padding: var(--spacing-16);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-2);
+            margin-bottom: var(--spacing-8);
+            font-weight: 700;
+            font-size: var(--font-size-xl);
+            color: var(--primary-color);
+        }
+
+        .logo-icon {
+            font-size: var(--font-size-2xl);
+        }
+
+        .error-number {
+            font-size: var(--font-size-6xl);
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--spacing-4);
+            line-height: 1;
+        }
+
+        .error-title {
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            margin-bottom: var(--spacing-4);
+            color: var(--text-primary);
+        }
+
+        .error-description {
+            font-size: var(--font-size-lg);
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-8);
+            line-height: 1.7;
+        }
+
+        .error-suggestions {
+            background: var(--bg-secondary);
+            padding: var(--spacing-6);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--spacing-8);
+            text-align: left;
+        }
+
+        .suggestions-title {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            margin-bottom: var(--spacing-4);
+            color: var(--text-primary);
+            text-align: center;
+        }
+
+        .suggestions-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .suggestions-list li {
+            padding: var(--spacing-2) 0;
+            color: var(--text-secondary);
+            position: relative;
+            padding-left: var(--spacing-6);
+        }
+
+        .suggestions-list li::before {
+            content: '💡';
+            position: absolute;
+            left: 0;
+            top: var(--spacing-2);
+        }
+
+        .error-actions {
+            display: flex;
+            gap: var(--spacing-4);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-2);
+            padding: var(--spacing-3) var(--spacing-6);
+            border: none;
+            border-radius: var(--radius-lg);
+            font-weight: 600;
+            font-size: var(--font-size-base);
+            cursor: pointer;
+            transition: var(--transition-fast);
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-secondary);
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-icon {
+            font-size: var(--font-size-sm);
+            transition: var(--transition-fast);
+        }
+
+        .btn:hover .btn-icon {
+            transform: translateX(2px);
+        }
+
+        .marketing-tip {
+            margin-top: var(--spacing-8);
+            padding: var(--spacing-6);
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: var(--radius-lg);
+        }
+
+        .tip-title {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            margin-bottom: var(--spacing-3);
+        }
+
+        .tip-content {
+            opacity: 0.9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 var(--spacing-3);
+            }
+            
+            .error-content {
+                padding: var(--spacing-8);
+            }
+            
+            .error-number {
+                font-size: var(--font-size-5xl);
+            }
+            
+            .error-title {
+                font-size: var(--font-size-2xl);
+            }
+            
+            .error-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+
+        /* Animation */
+        .error-content {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .error-number {
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-content">
+            <!-- Logo -->
+            <div class="logo">
+                <span class="logo-icon">📱</span>
+                <span class="logo-text">DigiMarketAI</span>
+            </div>
+
+            <!-- Error Number -->
+            <div class="error-number">404</div>
+
+            <!-- Error Title -->
+            <h1 class="error-title">Halaman Tidak Ditemukan</h1>
+
+            <!-- Error Description -->
+            <p class="error-description">
+                Oops! Sepertinya halaman yang Anda cari tidak ada atau telah dipindahkan. 
+                Mungkin link yang Anda klik sudah kadaluarsa atau ada kesalahan pengetikan URL.
+            </p>
+
+            <!-- Suggestions -->
+            <div class="error-suggestions">
+                <h3 class="suggestions-title">Yang Bisa Anda Lakukan:</h3>
+                <ul class="suggestions-list">
+                    <li>Periksa kembali URL yang Anda ketik</li>
+                    <li>Kembali ke halaman utama dan navigasi dari sana</li>
+                    <li>Gunakan menu navigasi untuk menemukan halaman yang Anda cari</li>
+                    <li>Hubungi dosen atau admin jika masalah berlanjut</li>
+                </ul>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="error-actions">
+                <a href="/" class="btn btn-primary">
+                    <span class="btn-icon">🏠</span>
+                    Kembali ke Beranda
+                </a>
+                <button onclick="history.back()" class="btn btn-secondary">
+                    <span class="btn-icon">←</span>
+                    Halaman Sebelumnya
+                </button>
+            </div>
+
+            <!-- Marketing Tip -->
+            <div class="marketing-tip">
+                <h3 class="tip-title">💡 Digital Marketing Tip</h3>
+                <p class="tip-content">
+                    Dalam digital marketing, halaman 404 adalah kesempatan untuk tetap engage dengan user! 
+                    Gunakan humor, berikan navigasi yang jelas, dan tawarkan konten alternatif yang menarik.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple analytics for 404 page
+        console.log('404 Error - Page not found:', window.location.href);
+        
+        // Auto redirect after 10 seconds (optional)
+        // setTimeout(() => {
+        //     window.location.href = '/';
+        // }, 10000);
+
+        // Add some interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click tracking for buttons
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    console.log('404 page button clicked:', this.textContent.trim());
+                });
+            });
+
+            // Add keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    const homeButton = document.querySelector('.btn-primary');
+                    if (homeButton) {
+                        homeButton.click();
+                    }
+                }
+                if (e.key === 'Escape') {
+                    history.back();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
