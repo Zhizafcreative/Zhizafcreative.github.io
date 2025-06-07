@@ -21,12 +21,9 @@ class EduAIApp {
         window.addEventListener('load', this.handleLoad.bind(this));
 
         // Button events
-        const startAccessBtn = document.getElementById('start-access');
         const watchVideoBtn = document.getElementById('watch-video');
 
-        if (startAccessBtn) {
-            startAccessBtn.addEventListener('click', this.handleStartAccess.bind(this));
-        }
+        // Start access button now redirects to /login via href, no JS needed
         
         if (watchVideoBtn) {
             watchVideoBtn.addEventListener('click', this.handleWatchVideo.bind(this));
@@ -97,11 +94,8 @@ class EduAIApp {
     }
 
     setupFormHandling() {
-        const accessForm = document.getElementById('access-form');
-
-        if (accessForm) {
-            accessForm.addEventListener('submit', this.handleFormSubmit.bind(this));
-        }
+        // Form removed, now using direct link to /login
+        // No form handling needed
     }
 
     setupSmoothScrolling() {
@@ -176,23 +170,7 @@ class EduAIApp {
         this.initializeAnimations();
     }
 
-    handleStartAccess(e) {
-        e.preventDefault();
-
-        // Scroll to access form
-        const accessSection = document.getElementById('akses');
-        if (accessSection) {
-            this.scrollToElement(accessSection);
-        }
-
-        // Focus on email input
-        setTimeout(() => {
-            const emailInput = document.querySelector('.form-input[type="email"]');
-            if (emailInput) {
-                emailInput.focus();
-            }
-        }, 500);
-    }
+    // handleStartAccess method removed - now using direct link to /login
 
     handleWatchVideo(e) {
         e.preventDefault();
@@ -201,18 +179,7 @@ class EduAIApp {
         this.showGuideModal();
     }
 
-    handleFormSubmit(e) {
-        e.preventDefault();
-        
-        const formData = new FormData(e.target);
-        const email = formData.get('email') || e.target.querySelector('input[type="email"]').value;
-        
-        if (this.validateEmail(email)) {
-            this.submitAccessRequest(email);
-        } else {
-            this.showError('Mohon masukkan email mahasiswa yang valid');
-        }
-    }
+    // handleFormSubmit method removed - now using direct link to /login
 
     scrollToElement(element) {
         const headerOffset = 80;
@@ -268,38 +235,7 @@ class EduAIApp {
         return emailRegex.test(email);
     }
 
-    async submitAccessRequest(email) {
-        try {
-            // Show loading state
-            this.showLoading();
-
-            // Simulate API call (replace with actual endpoint)
-            await this.simulateAPICall(email);
-
-            // Show success message
-            this.showSuccess('Pendaftaran berhasil! Selamat datang di mata kuliah Digital Marketing dengan AI.');
-
-            // Reset form
-            const form = document.getElementById('access-form');
-            if (form) {
-                form.reset();
-            }
-
-        } catch (error) {
-            this.showError('Terjadi kesalahan. Silakan coba lagi.');
-        } finally {
-            this.hideLoading();
-        }
-    }
-
-    simulateAPICall(email) {
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                console.log(`Access request for: ${email}`);
-                resolve();
-            }, 1500);
-        });
-    }
+    // submitAccessRequest and simulateAPICall methods removed - now using direct link to /login
 
     showGuideModal() {
         // Create and show guide modal (placeholder)
@@ -394,21 +330,7 @@ class EduAIApp {
         });
     }
 
-    showLoading() {
-        const submitBtn = document.querySelector('.cta-form .btn-primary');
-        if (submitBtn) {
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = 'Mengirim... <span class="btn-icon">⏳</span>';
-        }
-    }
-
-    hideLoading() {
-        const submitBtn = document.querySelector('.cta-form .btn-primary');
-        if (submitBtn) {
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = 'Mulai Belajar <span class="btn-icon">→</span>';
-        }
-    }
+    // showLoading and hideLoading methods removed - no longer needed with direct link
 
     showSuccess(message) {
         this.showNotification(message, 'success');
